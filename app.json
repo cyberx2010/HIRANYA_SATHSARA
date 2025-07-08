@@ -1,0 +1,37 @@
+{
+  "name": "SULA-MD",
+  "description": "SULA-MD Multidevice Whatsapp Bot",
+  "logo": "https://i.ibb.co/0R73PZb5/SulaMd.jpg",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+    },
+ "NEWS_SEND_JID": {
+      "description": "Put the jid channel or group",
+      "required": false
+    },
+"AUTO_NEWS_SENDER": {
+      "description": "true or false",
+      "required": false
+    } ,
+"TIKTOK_SEND_JID": {
+      "description": "Put the jid channel or group",
+      "required": false
+    } ,
+    "AUTO_TIKTOK_SENDER": {
+      "description": "true or false",
+      "required": false
+    } 
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
